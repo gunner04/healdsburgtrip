@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Healdsburg · May 28–31, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parchment: #f5f0e6;
+  --parchment-deep: #ebe4d4;
+  --parchment-soft: #f9f5ec;
+  --ink: #1f1d1a;
+  --ink-soft: #4a443c;
+  --ink-muted: #7d7567;
+  --oak: #8b4a2b;
+  --oak-deep: #5e3018;
+  --brass: #a08850;
+  --brass-deep: #7a6535;
+  --fired-clay: #c4533b;
+  --sage: #6b7a4f;
+  --rule: #ddd2bb;
+  --rule-soft: #e8dfc8;
+
+  --serif-display: 'Fraunces', Georgia, serif;
+  --serif-body: 'EB Garamond', 'Georgia', serif;
+  --mono: 'JetBrains Mono', 'Menlo', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--serif-body);
+  font-size: 17px;
+  line-height: 1.55;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'onum' 1;
+  background-image:
+    radial-gradient(at 12% 8%, rgba(196, 83, 59, 0.04) 0, transparent 50%),
+    radial-gradient(at 88% 92%, rgba(139, 74, 43, 0.05) 0, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* subtle paper texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.12 0 0 0 0 0.11 0 0 0 0 0.10 0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+/* ========== MASTHEAD ========== */
+.masthead {
+  padding: 3.5rem 0 2rem;
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+
+.masthead-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.masthead-title {
+  font-family: var(--serif-display);
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: 600;
+  font-variation-settings: "opsz" 144;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.masthead-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--oak);
+}
+
+.masthead-sub {
+  font-family: var(--serif-display);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-top: 1rem;
+}
+
+.masthead-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem 2rem;
+  margin-top: 2rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.masthead-meta div span {
+  display: block;
+  color: var(--ink);
+  font-family: var(--serif-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0.15rem;
+}
+
+/* ========== NAV ========== */
+nav.section-nav {
+  position: sticky;
+  top: 0;
+  background: var(--parchment);
+  background-image:
+    radial-gradient(at 12% 8%, rgba(196, 83, 59, 0.04) 0, transparent 50%),
+    radial-gradient(at 88% 92%, rgba(139, 74, 43, 0.05) 0, transparent 50%);
+  z-index: 100;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+  margin: 0 -1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+nav.section-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+nav.section-nav ul::-webkit-scrollbar { display: none; }
+
+nav.section-nav a {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+nav.section-nav a:hover {
+  color: var(--ink);
+  background: var(--parchment-deep);
+}
+
+nav.section-nav a.active {
+  color: var(--ink);
+  background: var(--parchment-deep);
+  border-color: var(--rule);
+}
+
+/* ========== SECTION HEADERS ========== */
+.section {
+  padding: 3.5rem 0 1.5rem;
+  scroll-margin-top: 4rem;
+}
+
+.section-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--oak);
+}
+
+.section-title {
+  font-family: var(--serif-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 500;
+  font-variation-settings: "opsz" 144;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--oak);
+  font-weight: 400;
+}
+
+.section-deck {
+  font-family: var(--serif-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+/* ========== OVERVIEW GRID ========== */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-bottom: 1rem;
+}
+
+.overview-cell {
+  background: var(--parchment-soft);
+  padding: 1.4rem 1.5rem;
+}
+
+.overview-cell-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+.overview-cell-value {
+  font-family: var(--serif-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.overview-cell-value strong { color: var(--oak); font-weight: 600; }
+
+/* ========== DAY TAB CONTROLS ========== */
+.day-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--ink);
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.day-tabs::-webkit-scrollbar { display: none; }
+
+.day-tab {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem 0.85rem;
+  font-family: var(--serif-display);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  position: relative;
+  letter-spacing: -0.005em;
+}
+
+.day-tab .tab-date {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+.day-tab:hover {
+  color: var(--ink);
+}
+
+.day-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--fired-clay);
+}
+
+.day-panel {
+  display: none;
+  animation: fadeIn 0.35s ease;
+}
+
+.day-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.day-headline {
+  font-family: var(--serif-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 500;
+  font-variation-settings: "opsz" 144;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.day-headline em { font-style: italic; color: var(--oak); }
+
+.day-dek {
+  font-family: var(--serif-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+  max-width: 65ch;
+}
+
+/* ========== SCHEDULE ROWS ========== */
+.schedule {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--rule);
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+
+.schedule-time {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--oak-deep);
+  font-weight: 500;
+  padding-top: 0.1rem;
+}
+
+.schedule-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.schedule-body strong { color: var(--oak-deep); font-weight: 600; }
+.schedule-body em { font-style: italic; color: var(--ink-soft); }
+
+.schedule-row.option-row {
+  background: var(--parchment-soft);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: 3px solid var(--brass);
+  margin: 0.5rem 0;
+}
+.schedule-row.option-row .schedule-time {
+  font-style: italic;
+  color: var(--brass-deep);
+}
+
+@media (max-width: 640px) {
+  .schedule-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 1rem 0;
+  }
+}
+
+/* ========== MEAL CARDS ========== */
+.meal-card {
+  background: var(--parchment-soft);
+  border: 1px solid var(--rule);
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.meal-card-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--fired-clay);
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.meal-card h3 {
+  font-family: var(--serif-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-variation-settings: "opsz" 96;
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.meal-card h3 em { font-style: italic; color: var(--oak); }
+
+.meal-card p {
+  margin-bottom: 0.85rem;
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+
+.meal-card p strong { color: var(--oak-deep); font-weight: 600; }
+.meal-card p em { color: var(--ink-soft); }
+
+/* ========== SHOPPING CHECKLIST ========== */
+.shop-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--parchment-soft);
+  border: 1px solid var(--rule);
+}
+
+.shop-stat {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink);
+  letter-spacing: 0.05em;
+}
+.shop-stat strong {
+  color: var(--fired-clay);
+  font-weight: 600;
+}
+
+.shop-toggle, .shop-reset {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.shop-toggle:hover, .shop-reset:hover {
+  background: var(--ink);
+  color: var(--parchment);
+}
+.shop-toggle.active {
+  background: var(--ink);
+  color: var(--parchment);
+}
+
+.shop-category {
+  margin-bottom: 2.25rem;
+}
+
+.shop-category-header {
+  font-family: var(--serif-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-variation-settings: "opsz" 96;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.shop-category-header em { font-style: italic; color: var(--oak); }
+.shop-category-header .cat-count {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-muted);
+}
+
+.shop-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-item {
+  display: grid;
+  grid-template-columns: 32px 1fr auto;
+  gap: 0.85rem;
+  padding: 0.85rem 0.25rem;
+  align-items: center;
+  border-bottom: 1px solid var(--rule-soft);
+  transition: opacity 0.25s ease;
+}
+
+.shop-item.checked {
+  opacity: 0.45;
+}
+
+.shop-item.checked .item-name,
+.shop-item.checked .item-meta {
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-muted);
+  text-decoration-thickness: 1px;
+}
+
+.shop-checkbox {
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--ink);
+  background: var(--parchment);
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+  border-radius: 2px;
+}
+
+.shop-checkbox:hover {
+  background: var(--parchment-deep);
+}
+
+.shop-checkbox:checked {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.shop-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--parchment);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.item-name {
+  font-family: var(--serif-body);
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.item-meta {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.item-meta .qty {
+  color: var(--oak-deep);
+  font-weight: 500;
+}
+
+.item-meta .day {
+  background: var(--parchment-deep);
+  padding: 0.05rem 0.4rem;
+  border-radius: 2px;
+  margin-left: 0.3rem;
+  color: var(--ink-soft);
+}
+
+.item-remove {
+  background: transparent;
+  border: none;
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.shop-item:hover .item-remove {
+  opacity: 1;
+}
+
+.item-remove:hover {
+  color: var(--fired-clay);
+}
+
+@media (hover: none) {
+  .item-remove { opacity: 0.5; }
+}
+
+.add-item-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--rule);
+}
+
+.add-item-input {
+  font-family: var(--serif-body);
+  font-size: 0.95rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--rule);
+  background: var(--parchment-soft);
+  color: var(--ink);
+  outline: none;
+  transition: all 0.15s;
+}
+
+.add-item-input:focus {
+  border-color: var(--ink);
+  background: var(--parchment);
+}
+
+.add-item-input::placeholder {
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.add-item-btn {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--parchment);
+  border: 1px solid var(--ink);
+  padding: 0 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-item-btn:hover { background: var(--oak-deep); border-color: var(--oak-deep); }
+
+/* ========== PICNIC TABLE ========== */
+.picnic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.picnic-card {
+  background: var(--parchment-soft);
+  border: 1px solid var(--rule);
+  padding: 1.5rem;
+}
+
+.picnic-card.default {
+  border-color: var(--fired-clay);
+  border-width: 2px;
+  position: relative;
+}
+
+.picnic-card.default::before {
+  content: 'DEFAULT';
+  position: absolute;
+  top: -10px;
+  left: 1rem;
+  background: var(--fired-clay);
+  color: var(--parchment);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  padding: 0.2rem 0.5rem;
+}
+
+.picnic-card h4 {
+  font-family: var(--serif-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.picnic-card .picnic-loc {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+.picnic-card dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.85rem;
+  font-size: 0.92rem;
+  margin-bottom: 0.85rem;
+}
+
+.picnic-card dt {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.picnic-card dd { color: var(--ink); }
+
+.picnic-card .picnic-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+/* ========== FLAGS LIST ========== */
+.flag-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.flag-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+.flag-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--fired-clay);
+  border-radius: 50%;
+}
+
+.flag-list li strong {
+  display: block;
+  font-family: var(--serif-display);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+/* ========== CONTACTS ========== */
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.contact-card {
+  background: var(--parchment-soft);
+  border: 1px solid var(--rule);
+  padding: 1.1rem 1.25rem;
+}
+
+.contact-card .contact-name {
+  font-family: var(--serif-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.contact-card .contact-detail {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.contact-card a {
+  color: var(--oak-deep);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: border-color 0.15s;
+}
+
+.contact-card a:hover { border-color: var(--oak); }
+
+/* ========== FOOTER ========== */
+footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer .footer-mark {
+  font-family: var(--serif-display);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+}
+
+/* small print rule */
+hr.editorial {
+  border: none;
+  height: 1px;
+  background: var(--rule);
+  margin: 2rem 0;
+}
+
+/* drop cap for first paragraph of each day */
+.day-headline + .day-dek::first-letter {
+  font-family: var(--serif-display);
+  font-size: 2.5em;
+  font-weight: 500;
+  float: left;
+  line-height: 0.85;
+  padding-right: 0.08em;
+  padding-top: 0.05em;
+  color: var(--oak);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 700px) {
+  .masthead { padding: 2rem 0 1.5rem; }
+  .section { padding: 2.5rem 0 1rem; }
+  .meal-card { padding: 1.25rem; }
+  .schedule-row { padding: 0.85rem 0; }
+  .item-remove { opacity: 0.4; }
+  .overview-cell { padding: 1.1rem 1.15rem; }
+}
+
+</style>
+</head>
+<body>
+
+<main>
+
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="masthead-eyebrow">
+      <span>FAMILY DOSSIER · NO. 01</span>
+      <span>SONOMA COUNTY</span>
+    </div>
+    <h1 class="masthead-title">Healdsburg<br/><em>in late spring</em></h1>
+    <p class="masthead-sub">
+      Four days at a farm stay with the family — workouts, two grills, the Champions League final, a baby in a hiking carrier, and bread from Wild Flour on the way home.
+    </p>
+    <div class="masthead-meta">
+      <div>DATES<span>Thu May 28 – Sun May 31, 2026</span></div>
+      <div>PARTY<span>7 humans, 1 bike, 2 cars</span></div>
+      <div>HOME BASE<span>146 Valley St, San Francisco</span></div>
+      <div>CHECKOUT<span>Sunday 10:00 a.m. sharp</span></div>
+    </div>
+  </header>
+
+  <!-- ============ NAV ============ -->
+  <nav class="section-nav">
+    <ul>
+      <li><a href="#overview" data-target="overview">Overview</a></li>
+      <li><a href="#schedule" data-target="schedule">Schedule</a></li>
+      <li><a href="#meals" data-target="meals">Meals</a></li>
+      <li><a href="#shopping" data-target="shopping">Shopping List</a></li>
+      <li><a href="#picnic" data-target="picnic">Picnic Options</a></li>
+      <li><a href="#flags" data-target="flags">Flags &amp; Gotchas</a></li>
+      <li><a href="#contacts" data-target="contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ OVERVIEW ============ -->
+  <section class="section" id="overview">
+    <div class="section-eyebrow">§ 01 · The Brief</div>
+    <h2 class="section-title">Setting the <em>table</em></h2>
+    <p class="section-deck">Relaxing family time, two BBQs, hikes with Kian in the carrier, ping pong and bocce at the farm stay. Workouts protected but light — active recovery week. Chill blocks pre-planned so the schedule never feels reactive.</p>
+    <div class="overview-grid">
+      <div class="overview-cell">
+        <div class="overview-cell-label">Vehicles</div>
+        <div class="overview-cell-value"><strong>Two-car convoy.</strong> Personal car (bike on rack) + Hertz rental from SFO.</div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">Airbnb</div>
+        <div class="overview-cell-value">Farm stay near Healdsburg. Ping pong, bocce. <strong>Checkout: Sun 10 a.m.</strong></div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">Hertz</div>
+        <div class="overview-cell-value">SFO Rental Car Center, <strong>open 24/7</strong>. ~25 min from home.</div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">SF ⇄ Healdsburg</div>
+        <div class="overview-cell-value">Via 101 N: ~1h 25m no traffic. Plan 1h 40m – 2h.</div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">Weather</div>
+        <div class="overview-cell-value">Healdsburg highs 66–71°F. Mornings ~52°F. <strong>Coast 10–15°F cooler + windy.</strong></div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">Workouts</div>
+        <div class="overview-cell-value"><strong>Recovery week.</strong> Fri: rest / opt 30-min. Sat: 2-hr bike. Sun: 40-min run.</div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">Kian's naps</div>
+        <div class="overview-cell-value">~9:30–11 a.m. (nap 1), ~1:30–3 p.m. (nap 2). Wake window ~3–3.5 hrs.</div>
+      </div>
+      <div class="overview-cell">
+        <div class="overview-cell-label">The cast</div>
+        <div class="overview-cell-value">Suhas, wife, Kian (1), parents (~65), sister, nephew (10).</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section class="section" id="schedule">
+    <div class="section-eyebrow">§ 02 · The Itinerary</div>
+    <h2 class="section-title">Day by <em>day</em></h2>
+    <p class="section-deck">One major outing per day. Nap windows are anchors. Workout placement matches the recovery-week load. Sunday is the most engineered — checkout, food stops, picnic, drive home, all paced around a single car nap.</p>
+
+    <div class="day-tabs" role="tablist">
+      <button class="day-tab active" data-day="thu" role="tab"><span class="tab-date">Thu · 5/28</span>Travel Day</button>
+      <button class="day-tab" data-day="fri" role="tab"><span class="tab-date">Fri · 5/29</span>Museum &amp; Pasta</button>
+      <button class="day-tab" data-day="sat" role="tab"><span class="tab-date">Sat · 5/30</span>Bike &amp; Lamb Feast</button>
+      <button class="day-tab" data-day="sun" role="tab"><span class="tab-date">Sun · 5/31</span>Picnic &amp; Home</button>
+    </div>
+
+    <!-- THURSDAY -->
+    <div class="day-panel active" id="day-thu" role="tabpanel">
+      <h3 class="day-headline">Travel <em>day</em></h3>
+      <p class="day-dek">Hertz pickup (morning, separate) → load → SF → Healdsburg Plaza → grocery → Airbnb → Greek BBQ</p>
+      <div class="schedule">
+        <div class="schedule-row"><div class="schedule-time">Morning (any)</div><div class="schedule-body"><strong>Hertz pickup run.</strong> You + wife drive personal car to SFO Hertz (780 N. McDonnell Rd, Rental Car Center). ~25 min each way. Pickup: 5–10 min with Gold status, 20–45 min without. Wife drives rental home, you drive personal car home. <strong>Park rental at home until departure.</strong></div></div>
+        <div class="schedule-row"><div class="schedule-time">Before 1 p.m.</div><div class="schedule-body">Install Kian's car seat in rental at home. Mount bike on personal car rack. Load luggage across both cars.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:30 p.m.</div><div class="schedule-body">Family lunch at home before departure. Avoids hangry car ride; syncs with Kian's nap window.</div></div>
+        <div class="schedule-row"><div class="schedule-time">1:30 p.m.</div><div class="schedule-body"><strong>Depart SF for Healdsburg.</strong> Two-car convoy on 101 N. Kian naps in car. <em>Note: 101 N weekend-eve traffic builds after 2 p.m. — leaving at 1:00 is safer if you can pull it forward.</em></div></div>
+        <div class="schedule-row"><div class="schedule-time">3:15 p.m.</div><div class="schedule-body">Arrive <strong>Healdsburg Plaza</strong>. Park, stretch legs, coffee/snack. Plaza has lawn space; ice cream at Noble Folk.</div></div>
+        <div class="schedule-row"><div class="schedule-time">4:30–5:15 p.m.</div><div class="schedule-body">Grocery shop at <strong>Big Johns Market</strong> (1345 Healdsburg Ave). See shopping list.</div></div>
+        <div class="schedule-row"><div class="schedule-time">5:15–5:45 p.m.</div><div class="schedule-body">Drive to Airbnb (~10 min from Plaza), unload.</div></div>
+        <div class="schedule-row"><div class="schedule-time">5:45–6:45 p.m.</div><div class="schedule-body">Explore Airbnb. Bocce, ping pong. Kian wanders. Grandparents decompress. <strong>At ~5:45: mix Greek chicken marinade in Ziploc, add chicken, refrigerate.</strong></div></div>
+        <div class="schedule-row"><div class="schedule-time">6:45–7:45 p.m.</div><div class="schedule-body"><strong>BBQ dinner: Greek lemon-oregano chicken</strong> + grilled veg + Greek village salad + tzatziki + pita + grilled lemons. Start fire ~6:30. <em>See meal plan.</em></div></div>
+        <div class="schedule-row"><div class="schedule-time">8:00–8:30 p.m.</div><div class="schedule-body">Kian bedtime routine.</div></div>
+        <div class="schedule-row"><div class="schedule-time">By 10:30 p.m.</div><div class="schedule-body">Lights out.</div></div>
+      </div>
+    </div>
+
+    <!-- FRIDAY -->
+    <div class="day-panel" id="day-fri" role="tabpanel">
+      <h3 class="day-headline">Rest day, <em>museum, easy evening</em></h3>
+      <p class="day-dek">Optional run → museum → chill block → Riverfront walk → pasta + shrimp dinner</p>
+      <div class="schedule">
+        <div class="schedule-row"><div class="schedule-time">7:30–9:00 a.m.</div><div class="schedule-body">Family breakfast at Airbnb (self-serve bar). Yogurt, granola, fruit, toast, eggs available, chai/coffee.</div></div>
+        <div class="schedule-row"><div class="schedule-time">Opt 9–9:30 a.m.</div><div class="schedule-body"><strong>Optional easy 30-min run</strong> if you feel like it. Skip if you don't.</div></div>
+        <div class="schedule-row"><div class="schedule-time">9:30–10:00 a.m.</div><div class="schedule-body">Kian likely starting nap #1 (~9:30–11). Pack museum bag (diaper bag, snacks, water, change of clothes for Kian — water exhibits will get him wet).</div></div>
+        <div class="schedule-row"><div class="schedule-time">10:45–11:15 a.m.</div><div class="schedule-body">Kian wakes, get him ready. Load car.</div></div>
+        <div class="schedule-row"><div class="schedule-time">11:15–11:35 a.m.</div><div class="schedule-body">Drive to <strong>Children's Museum of Sonoma County</strong> (1835 W Steele Ln, Santa Rosa). ~20 min.</div></div>
+        <div class="schedule-row"><div class="schedule-time">11:35 a.m.–2:30 p.m.</div><div class="schedule-body"><strong>Children's Museum.</strong> Open 9–4. Designed for ages 0–10. Nephew may be borderline-bored — give him a role helping with Kian. Lunch on-site. Kian nap #2 in stroller ~1–2 p.m.</div></div>
+        <div class="schedule-row"><div class="schedule-time">2:30–2:50 p.m.</div><div class="schedule-body">Drive back to Airbnb.</div></div>
+        <div class="schedule-row"><div class="schedule-time">2:50–5:30 p.m.</div><div class="schedule-body"><strong>Chill block at Airbnb.</strong> Ping pong, bocce, baby in the grass, grandparents reading.</div></div>
+        <div class="schedule-row"><div class="schedule-time">5:30–6:30 p.m.</div><div class="schedule-body"><strong>Riverfront Regional Park easy walk</strong> with Kian in carrier (~15 min drive). <em>Recovery week means this is back on the menu — recommended.</em></div></div>
+        <div class="schedule-row"><div class="schedule-time">6:30–7:30 p.m.</div><div class="schedule-body"><strong>Dinner: pasta + sheet-pan shrimp.</strong> Aglio e olio (1 lb pasta) + 1.5 lb sheet-pan lemon-garlic shrimp (15 min in oven) + simple salad + leftover Thursday veg.</div></div>
+        <div class="schedule-row"><div class="schedule-time">8:00 p.m.</div><div class="schedule-body">Kian down.</div></div>
+        <div class="schedule-row"><div class="schedule-time">By 9:30–10:00 p.m.</div><div class="schedule-body">Lights out. <strong>Bike at 7 a.m. tomorrow.</strong></div></div>
+      </div>
+    </div>
+
+    <!-- SATURDAY -->
+    <div class="day-panel" id="day-sat" role="tabpanel">
+      <h3 class="day-headline">Bike ride, <em>Champions League, lamb feast</em></h3>
+      <p class="day-dek">Kickoff is locked at 9 a.m. PT — bike must end by 9. Tightest day of the trip.</p>
+      <div class="schedule">
+        <div class="schedule-row"><div class="schedule-time">6:30 a.m.</div><div class="schedule-body">You wake. Coffee. Pre-ride snack (banana + half toast). Kit up.</div></div>
+        <div class="schedule-row"><div class="schedule-time">7:00–9:00 a.m.</div><div class="schedule-body"><strong>Bike ride, 2 hrs.</strong> Dry Creek Rd loop or Westside Rd. Carry one gel + electrolyte mix (you brought from home). <strong>Be back by 9:00 sharp.</strong></div></div>
+        <div class="schedule-row"><div class="schedule-time">9:00 a.m.</div><div class="schedule-body">Back from ride. <strong>Decision point: Option A or B below.</strong> Either way, eggs + toast + coffee ready, Paramount+ open, family settled with Kian before kickoff.</div></div>
+        <div class="schedule-row option-row"><div class="schedule-time">Option A</div><div class="schedule-body"><strong>Pre-match market run (skip shower).</strong> 9:00–9:15: change out of sweaty kit. 9:15: family departs for Healdsburg Saturday Farmers' Market (West Plaza, 8:30 a.m.–noon). <em>Tight — only do if you're moving fast.</em> Shower at halftime.</div></div>
+        <div class="schedule-row option-row"><div class="schedule-time">Option B (default)</div><div class="schedule-body"><strong>Post-match market run.</strong> 9:00–9:20: shower, change. 9:20–11:00: watch match with family. <strong>11:00 onwards: family to market.</strong> Depart Airbnb by 11:15. Market closes at noon.</div></div>
+        <div class="schedule-row"><div class="schedule-time">9:00–11:00 a.m.</div><div class="schedule-body"><strong>Champions League Final — Arsenal vs PSG.</strong> Kickoff 9:00 a.m. PT, Paramount+ &amp; CBS. Buffer to 11:45 if extra time + pens.</div></div>
+        <div class="schedule-row"><div class="schedule-time">11:00 a.m.–12:00 p.m.</div><div class="schedule-body"><strong>Farmers' market (B path)</strong> or recovery + Kian time (A path). Strawberries, peaches, cheeses, bread, salami, honey, tomatoes, cucumbers.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:00–12:30 p.m.</div><div class="schedule-body"><strong>Lunch: market board.</strong> Cheese, bread, fruit, cured meat, hummus, olives, hard-boiled eggs, raw veggies. No cooking.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:30 p.m.</div><div class="schedule-body"><strong>Apply lamb marinade now</strong> (or 1 p.m. before hike) — 4–6 hours marinating is ideal.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:45–3:30 p.m.</div><div class="schedule-body"><strong>Hike with Kian in carrier.</strong> Healdsburg Ridge Open Space Preserve or Riverfront Regional Park. ~15 min drive. 1.5–2 hr easy hike.</div></div>
+        <div class="schedule-row"><div class="schedule-time">3:30–5:30 p.m.</div><div class="schedule-body">Airbnb chill. <strong>Bocce / ping pong tournament with nephew.</strong> Make chimichurri + garlic-herb butter (15 min).</div></div>
+        <div class="schedule-row"><div class="schedule-time">5:30–6:00 p.m.</div><div class="schedule-body">Take lamb out of fridge for room temp. Start grill heating. Prep peaches, corn dressing, slice sourdough for garlic bread.</div></div>
+        <div class="schedule-row"><div class="schedule-time">6:00–7:30 p.m.</div><div class="schedule-body"><strong>BBQ #2 — lamb feast.</strong> Butterflied leg of lamb + chimichurri + grilled peach + burrata + elote corn + market salad + garlic bread + pita.</div></div>
+        <div class="schedule-row"><div class="schedule-time">8:00 p.m.</div><div class="schedule-body">Kian down.</div></div>
+        <div class="schedule-row"><div class="schedule-time">By 10:00 p.m.</div><div class="schedule-body">Lights out. <em>Run is at your discretion tomorrow.</em></div></div>
+      </div>
+    </div>
+
+    <!-- SUNDAY -->
+    <div class="day-panel" id="day-sun" role="tabpanel">
+      <h3 class="day-headline">Easy run, <em>food stops, picnic, home</em></h3>
+      <p class="day-dek">10 a.m. checkout. Run → pack → drive south → Samnzar → Wild Flour → picnic → SF.</p>
+      <div class="schedule">
+        <div class="schedule-row"><div class="schedule-time">7:00 a.m.</div><div class="schedule-body">Wake. Coffee. Light pre-run snack if needed.</div></div>
+        <div class="schedule-row"><div class="schedule-time">7:15–7:55 a.m.</div><div class="schedule-body"><strong>40-min easy run from the Airbnb.</strong> No driving needed. Quick recovery snack on return (banana + toast).</div></div>
+        <div class="schedule-row"><div class="schedule-time">8:00–8:30 a.m.</div><div class="schedule-body">Shower. Start packing your stuff.</div></div>
+        <div class="schedule-row"><div class="schedule-time">8:00–9:00 a.m.</div><div class="schedule-body">Family breakfast at Airbnb. Use up remaining eggs, fruit, yogurt, toast. Parents do chai. Kian eats with family.</div></div>
+        <div class="schedule-row"><div class="schedule-time">8:30–9:30 a.m.</div><div class="schedule-body"><strong>Pack both cars.</strong> Luggage, leftovers in cooler, Kian gear. Re-mount bike on personal car rack. Final sweep. <em>Kian may try to nap mid-pack — let him, he'll car-nap.</em></div></div>
+        <div class="schedule-row"><div class="schedule-time">9:30–10:00 a.m.</div><div class="schedule-body">Final cleanup. Check every room, fridge, drawers. Trash out.</div></div>
+        <div class="schedule-row"><div class="schedule-time">10:00 a.m.</div><div class="schedule-body"><strong>Airbnb checkout.</strong> Depart Healdsburg. Two-car convoy. 101 → Hwy 116 W → Bodega Hwy. <strong>Kian car-naps on the drive.</strong></div></div>
+        <div class="schedule-row"><div class="schedule-time">10:45–11:05 a.m.</div><div class="schedule-body"><strong>Stop 1: Samnzar Smoke Shack</strong> (9100 Bodega Hwy, Sebastopol). ~45 min from Healdsburg. ~15–20 min stop. Hot-smoked salmon, lox, jerky. <strong>Call 707-829-6699 Saturday to confirm Sunday hours.</strong></div></div>
+        <div class="schedule-row"><div class="schedule-time">11:05–11:15 a.m.</div><div class="schedule-body">Drive to Wild Flour. ~2.6 mi west.</div></div>
+        <div class="schedule-row"><div class="schedule-time">11:15 a.m.–12:15 p.m.</div><div class="schedule-body"><strong>Stop 2: Wild Flour Bread</strong> (140 Bohemian Hwy, Freestone). Walk-up bakery, line can be 20 min. One adult queues, others wait in garden with Kian. Buy: country loaf / fougasse for picnic, sticky buns, scones, coffee.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:15–12:45 p.m.</div><div class="schedule-body"><strong>Drive to picnic spot.</strong> ~20–30 min.</div></div>
+        <div class="schedule-row"><div class="schedule-time">12:45–2:15 p.m.</div><div class="schedule-body"><strong>Picnic lunch.</strong> Assemble Samnzar salmon + Wild Flour bread + leftover market cheese + fruit. Kian nap #2 may start in carrier toward the end.</div></div>
+        <div class="schedule-row"><div class="schedule-time">2:15–2:30 p.m.</div><div class="schedule-body">Pack up, into cars.</div></div>
+        <div class="schedule-row"><div class="schedule-time">2:30 p.m.</div><div class="schedule-body"><strong>Depart for SF.</strong> Hwy 12 east → 101 S. Kian sleeps in car. ~1h 15m–1h 30m.</div></div>
+        <div class="schedule-row"><div class="schedule-time">~3:45–4:00 p.m.</div><div class="schedule-body"><strong>Arrive home, 146 Valley St.</strong> Unload both cars. Park rental at home.</div></div>
+        <div class="schedule-row"><div class="schedule-time">Later Sunday</div><div class="schedule-body"><strong>Hertz return run.</strong> Decoupled. Drive rental to SFO (~25 min), drop-off is fast. Uber back (~$25–30) or have someone follow. <em>Hertz SFO is 24/7 — can defer to Monday morning.</em></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEALS ============ -->
+  <section class="section" id="meals">
+    <div class="section-eyebrow">§ 03 · The Kitchen</div>
+    <h2 class="section-title">The <em>meal</em> plan</h2>
+    <p class="section-deck">Flavor arc: Greek Thursday → Italian Friday → Mediterranean board Saturday lunch → Mediterranean lamb feast Saturday dinner → smoked salmon picnic Sunday.</p>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">THURSDAY DINNER · BBQ #1</div>
+      <h3>Greek lemon-oregano <em>chicken</em></h3>
+      <p><strong>Plate:</strong> Chicken thighs + grilled veg + Greek village salad + tzatziki + pita + grilled lemons.</p>
+      <p><strong>Chicken marinade</strong> (mix in Ziploc at Airbnb ~5:45 p.m., 60+ min marinade): 1/3 cup olive oil, 1/4 cup lemon juice + zest of 1 lemon, 6 cloves garlic minced, 2 tbsp dried oregano, 1 tbsp salt, 2 tsp black pepper, 1 tsp red pepper flakes, 2 tsp dried thyme. Grill 4–5 min direct each side, then 3–5 min indirect to 165°F. Rest 5 min.</p>
+      <p><strong>Tzatziki:</strong> 1.5 cups Greek yogurt + 1 grated English cucumber (squeezed dry!) + 2 garlic cloves + 1 tbsp olive oil + 1 tbsp lemon + 1/2 tsp salt + 2 tbsp chopped dill.</p>
+      <p><strong>Greek village salad:</strong> 3 tomatoes chunked + 1 cucumber sliced + 1/2 red onion thin + 1 cup Kalamata olives + 6 oz feta in slabs (not crumbled) + dressing of 3 tbsp olive oil, 1 tbsp red wine vinegar, 1 tsp oregano, S&amp;P. No lettuce.</p>
+      <p><strong>Grilled veg:</strong> Zucchinis (1/2-in planks), shishitos in basket, red onion rings, asparagus. Olive oil + salt before grilling. Finish with lemon squeeze.</p>
+      <p><strong>Grilled lemons:</strong> 3 lemons halved, cut-side oiled, grilled cut-side-down 3–4 min. One half per plate to squeeze.</p>
+      <p><em>Kian:</em> Set aside one plain chicken thigh before marinating. Plain zucchini, torn pita, cucumber + feta crumble.</p>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">FRIDAY DINNER · LIGHT</div>
+      <h3>Pasta + sheet-pan <em>shrimp</em></h3>
+      <p><strong>Plate:</strong> Aglio e olio + sheet-pan lemon-garlic shrimp + leftover Thursday grilled veg + simple salad.</p>
+      <p><strong>Aglio e olio</strong> (25 min): 1 lb spaghetti or bucatini cooked al dente. Sauté 6 sliced garlic cloves in 1/4 cup olive oil low + slow until pale gold (3–4 min). Add 1 tsp red pepper flakes. Toss with pasta + 1/2 cup reserved pasta water. Finish with chopped parsley + parmesan + black pepper.</p>
+      <p><strong>Sheet-pan lemon-garlic shrimp</strong> (15 min, parallel to pasta): Oven to 400°F. Toss 1.5 lbs peeled deveined shrimp (thawed if frozen) with 3 tbsp olive oil, 4 cloves garlic minced, zest + juice of 1 lemon, 1 tsp salt, 1/2 tsp red pepper flakes, 1/2 tsp black pepper, 1 tbsp chopped parsley. Spread on sheet pan. Roast 8–10 min until pink. <em>Don't overcook — shrimp turn rubbery fast.</em> Fresh lemon squeeze before serving.</p>
+      <p><strong>Side salad:</strong> Mixed greens + lemon-dijon vinaigrette (3 tbsp olive oil, 1 tbsp lemon, 1 tsp dijon, S&amp;P).</p>
+      <p><em>Kian:</em> Plain shrimp pieces (chopped small), plain pasta with butter + parm.</p>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">SATURDAY LUNCH · NO COOKING</div>
+      <h3>The market <em>board</em></h3>
+      <p><strong>Build a board, don't cook.</strong> Spread on a big platter:</p>
+      <p>Cheeses (2–3 varieties, room temp 30 min before serving), sliced bread + crackers, salami/cured meat, sliced strawberries + cherries, sliced cucumber + snap peas + radishes (raw), hummus + olive oil + za'atar, marinated olives, hard-boiled eggs cut in half with flaky salt, honey + jam + butter, fresh herbs scattered.</p>
+      <p><strong>From Thursday Big Johns shop:</strong> hummus, olives, feta, sourdough, eggs (hard-boil Fri night). <strong>From Saturday farmers' market:</strong> cheese, fruit, salami, additional bread, honey, tomatoes, snap peas.</p>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">SATURDAY DINNER · BBQ #2 / FEAST</div>
+      <h3>Mediterranean <em>lamb feast</em></h3>
+      <p><strong>Plate:</strong> Butterflied leg of lamb + chimichurri + grilled peach + burrata + elote corn + market salad + garlic bread + pita.</p>
+      <p><strong>Lamb marinade</strong> (apply 12:30–1 p.m., let sit 4–6 hrs): 1/2 cup olive oil, 6 garlic minced, 3 tbsp lemon juice + zest of 2 lemons, 3 tbsp fresh rosemary chopped, 2 tbsp fresh thyme, 2 tbsp Dijon, 1 tbsp salt, 1.5 tsp black pepper. Optional: 1 tsp cumin + 1 tsp coriander.</p>
+      <p><strong>Lamb method:</strong> Room temp 30 min before grilling. Sear direct high heat 4–5 min/side. Move to indirect, close lid, cook to 130°F internal (medium-rare), ~20–25 min more. Rest 15 min minimum. Slice <strong>thin, against the grain.</strong></p>
+      <p><strong>Chimichurri:</strong> 1 large bunch parsley + 4 garlic cloves + 1/4 cup red wine vinegar + 1/2 cup olive oil + 1 tsp dried oregano + 1/2 tsp red pepper flakes + 1 tsp salt. Pulse in food processor.</p>
+      <p><strong>Grilled peach + burrata:</strong> 4 ripe peaches halved + pitted, cut-side oiled, grilled cut-side-down 3–4 min. Plate with torn burrata, olive oil drizzle, balsamic glaze, flaky salt, torn basil. <em>The showstopper. 10 min.</em></p>
+      <p><strong>Elote corn:</strong> 4 ears husked, grilled direct heat 8–10 min turning every 2 min. Brush with mayo + sour cream + lime juice + chili powder + cotija/feta + cilantro.</p>
+      <p><strong>Garlic bread:</strong> Sourdough sliced thick, slathered with garlic-herb butter (1 stick butter + 4 garlic cloves minced + 1/4 cup parsley + 1/2 tsp salt). Foil-wrapped, indirect grill side 10 min while lamb rests.</p>
+      <p><em>Kian:</em> Sliced lamb (well-done end pieces) no chimichurri. Corn kernels off cob. Plain bread.</p>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">SUNDAY LUNCH · PICNIC</div>
+      <h3>Smoked salmon <em>picnic</em></h3>
+      <p><strong>Plate:</strong> Samnzar smoked salmon + Wild Flour bread + leftover market cheese/fruit + whatever else is in the cooler.</p>
+      <p>Assemble sandwiches at the picnic table. Bring from Airbnb: plates, napkins, small knife, cutting board, water bottles. <em>No cooking.</em></p>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-card-eyebrow">BREAKFASTS · SELF-SERVE BAR</div>
+      <h3>The morning <em>routine</em></h3>
+      <p><strong>Self-serve bar (set up Thu night, refill daily):</strong> Sourdough + toaster, butter, jam, honey, peanut butter, granola, cereal on the counter. Yogurt (Greek + regular), milk, hard-boiled eggs (boil 6 Thursday night), fruit washed and ready, cheese slices in the fridge. Coffee + tea + parents' chai supplies (cardamom, cloves, cinnamon, whole milk).</p>
+      <p><strong>Friday:</strong> Family self-serves 7:30–9. Optional run for you. Eat with family or grab toast + eggs.</p>
+      <p><strong>Saturday:</strong> Pre-bike (6:30): banana + half toast + coffee. Post-bike during match: 3-egg scramble (cooked at 8:30 after shower) + 2 toast + fruit + yogurt + big coffee.</p>
+      <p><strong>Sunday:</strong> Light pre-run snack (banana, sip of coffee). Full family breakfast 8–9. Use up the fridge.</p>
+    </div>
+  </section>
+
+  <!-- ============ SHOPPING LIST ============ -->
+  <section class="section" id="shopping">
+    <div class="section-eyebrow">§ 04 · The Provisions</div>
+    <h2 class="section-title">Big Johns <em>shopping list</em></h2>
+    <p class="section-deck">Call butcher Thursday morning before leaving SF: <strong>707-433-7151</strong>. Confirm 4–5 lb boneless butterflied leg of lamb for Saturday pickup. Backup: 2 whole spatchcocked chickens (~3.5 lbs each).</p>
+
+    <div class="shop-controls">
+      <div class="shop-stat" id="shop-stat">— / — items</div>
+      <button class="shop-toggle" id="shop-toggle">Hide checked</button>
+      <button class="shop-reset" id="shop-reset">Reset all</button>
+    </div>
+
+    <div id="shop-categories"></div>
+  </section>
+
+  <!-- ============ PICNIC OPTIONS ============ -->
+  <section class="section" id="picnic">
+    <div class="section-eyebrow">§ 05 · The Picnic</div>
+    <h2 class="section-title">Picnic spot <em>options</em></h2>
+    <p class="section-deck">Choose Sunday morning based on weather. Ragle Ranch is the default — shaded, inland, low wind, kid-friendly. Doran Beach if "ocean experience" matters more.</p>
+
+    <div class="picnic-grid">
+      <div class="picnic-card default">
+        <h4>Ragle Ranch Regional Park</h4>
+        <div class="picnic-loc">Sebastopol · ~20 min east of Wild Flour</div>
+        <dl>
+          <dt>Shade</dt><dd>Yes — Live Oak grove</dd>
+          <dt>Wind</dt><dd>Low (inland)</dd>
+          <dt>Fee</dt><dd>$8/vehicle</dd>
+          <dt>Hours</dt><dd>8 a.m.–4:30 p.m.</dd>
+        </dl>
+        <p class="picnic-note">157 acres, picnic sites under oaks, playground, flush toilets, soft grass.</p>
+      </div>
+
+      <div class="picnic-card">
+        <h4>Doran Regional Park</h4>
+        <div class="picnic-loc">Bodega Bay · ~25 min west of Wild Flour</div>
+        <dl>
+          <dt>Shade</dt><dd>None natural</dd>
+          <dt>Wind</dt><dd>High (exposed coast)</dd>
+          <dt>Fee</dt><dd>$7/vehicle</dd>
+          <dt>Hours</dt><dd>Sunrise–sunset</dd>
+        </dl>
+        <p class="picnic-note">Crescent windbreaks, fire rings, flush toilets, 2-mile sheltered beach. Parking fills early on Memorial Day weekend.</p>
+      </div>
+
+      <div class="picnic-card">
+        <h4>Backup options</h4>
+        <div class="picnic-loc">TBD</div>
+        <dl>
+          <dt>Westside</dt><dd>Bodega Bay, less wind than Doran, no shade</dd>
+          <dt>Spring Lake</dt><dd>Santa Rosa, oaks + lake, +30 min drive</dd>
+        </dl>
+        <p class="picnic-note">In case Ragle and Doran are both off the table.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FLAGS ============ -->
+  <section class="section" id="flags">
+    <div class="section-eyebrow">§ 06 · Risks</div>
+    <h2 class="section-title">Flags &amp; <em>gotchas</em></h2>
+    <ul class="flag-list">
+      <li><strong>Hertz pickup decoupled from Healdsburg run.</strong> You + wife do the SFO run Thursday morning, drive both cars home, park rental, install car seat at home. Family departure for Healdsburg is 1:30 p.m.</li>
+      <li><strong>Two-car convoy throughout.</strong> Personal car carries you, bike, possibly Kian + wife. Rental carries the rest. Use phone navigation independently — don't try to literally follow each other.</li>
+      <li><strong>Sunday Hertz return is also decoupled.</strong> Unload at home first. Drop the rental later. Confirm contract deadline. Hertz SFO is 24/7.</li>
+      <li><strong>Sunday checkout is 10 a.m. — pack starts the night before.</strong> Pack non-essentials Saturday night so Sunday morning is clean.</li>
+      <li><strong>Champions League final = exact 9:00 a.m. PT kickoff.</strong> Arsenal vs PSG. Saturday bike must be done by 9 a.m. sharp. Plan for extra time + pens pushing end to ~11:45 a.m.</li>
+      <li><strong>Samnzar is a one-man, weekends-only operation.</strong> Greg Brummett runs it solo. Articles from 2023 flagged he was struggling. Call <strong>707-829-6699</strong> Saturday morning to confirm Sunday hours.</li>
+      <li><strong>Wild Flour Sunday line can be 20+ min.</strong> Walk-up only, no inside seating. Split duty: one adult queues, others wait in garden with Kian.</li>
+      <li><strong>Coastal weather is 10–15°F cooler than Healdsburg + windy.</strong> If picking Doran: pack jackets, beanie for Kian, blanket. Default picnic (Ragle Ranch) is inland and avoids this.</li>
+      <li><strong>Thursday 1:30 p.m. departure may hit traffic.</strong> 101 N weekend-eve traffic builds after 2 p.m. Leaving at 1:00 is safer.</li>
+      <li><strong>Lamb marinade timing: 4–6 hours.</strong> Apply Saturday 12:30–1 p.m. for 6 p.m. grilling. Take out of fridge 30 min before grilling for room-temp meat.</li>
+      <li><strong>Berry season timing.</strong> Late May is early for Sonoma raspberries; strawberries more likely. Farmers' market hedges this.</li>
+    </ul>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="section" id="contacts">
+    <div class="section-eyebrow">§ 07 · The Rolodex</div>
+    <h2 class="section-title">Key <em>contacts</em></h2>
+    <div class="contacts">
+      <div class="contact-card">
+        <div class="contact-name">Home</div>
+        <div class="contact-detail">146 Valley St, San Francisco</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Hertz SFO (Rental Car Center)</div>
+        <div class="contact-detail">780 N. McDonnell Rd, SF · <a href="tel:6506246600">650-624-6600</a> · open 24/7</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Big Johns Market</div>
+        <div class="contact-detail">1345 Healdsburg Ave · <a href="tel:7074337151">707-433-7151</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Healdsburg Farmers' Market</div>
+        <div class="contact-detail">West Plaza, Vine &amp; North · Sat 8:30 a.m.–noon</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Samnzar Smoke Shack</div>
+        <div class="contact-detail">9100 Bodega Hwy, Sebastopol · <a href="tel:7078296699">707-829-6699</a> · Sat/Sun 9 a.m.–4 p.m.</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Wild Flour Bread</div>
+        <div class="contact-detail">140 Bohemian Hwy, Freestone · <a href="tel:7078742938">707-874-2938</a> · Fri–Mon 8 a.m.–6 p.m.</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Ragle Ranch Park</div>
+        <div class="contact-detail">500 Ragle Rd, Sebastopol · <a href="tel:7078237262">707-823-7262</a> · 8 a.m.–4:30 p.m. · $8/vehicle</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Doran Regional Park</div>
+        <div class="contact-detail">201 Doran Beach Rd, Bodega Bay · <a href="tel:7078753540">707-875-3540</a> · sunrise–sunset · $7/vehicle</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Children's Museum of Sonoma County</div>
+        <div class="contact-detail">1835 W Steele Ln, Santa Rosa · <a href="tel:7075464069">707-546-4069</a> · 9 a.m.–4 p.m. (closed Tue)</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-name">Riverfront Regional Park</div>
+        <div class="contact-detail">7821 Eastside Rd, Healdsburg · $8/vehicle</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>HEALDSBURG · MAY 28–31 · MMXXVI</span>
+    <span class="footer-mark"><em>fin.</em></span>
+  </footer>
+
+</main>
+
+<script>
+// ============ DATA: SHOPPING LIST ============
+const SHOPPING_DATA = [
+  {
+    category: "Butcher / meat",
+    key: "butcher",
+    items: [
+      { id: "b1", name: "Boneless skinless chicken thighs", qty: "3 lbs", forWhat: "Greek lemon-oregano chicken (main)", day: "Thu BBQ" },
+      { id: "b2", name: "Boneless butterflied leg of lamb", qty: "4–5 lbs", forWhat: "Lamb feast main · backup: 2 whole chickens", day: "Sat BBQ" },
+      { id: "b3", name: "Shrimp, peeled + deveined (frozen ok)", qty: "1.5 lbs", forWhat: "Sheet-pan lemon-garlic shrimp · thaw Fri afternoon", day: "Fri dinner" },
+      { id: "b4", name: "Smoked salmon", qty: "8 oz", forWhat: "Backup if Samnzar falls through", day: "Sun picnic" }
+    ]
+  },
+  {
+    category: "Dairy",
+    key: "dairy",
+    items: [
+      { id: "d1", name: "Large eggs", qty: "1 dozen", forWhat: "Hard-boiled (Sat board) + scrambles + Kian", day: "All breakfasts" },
+      { id: "d2", name: "Whole-milk Greek yogurt", qty: "32 oz tub", forWhat: "Tzatziki + breakfast bar + Kian", day: "Thu + breakfasts" },
+      { id: "d3", name: "Regular whole-milk yogurt", qty: "16 oz", forWhat: "Breakfast bar + Kian", day: "Fri/Sat/Sun" },
+      { id: "d4", name: "Whole milk", qty: "1/2 gal", forWhat: "Kian + chai + coffee + cereal", day: "All days" },
+      { id: "d5", name: "2% or whole milk", qty: "1/2 gal", forWhat: "Adults' coffee + cereal", day: "All breakfasts" },
+      { id: "d6", name: "Half-and-half or oat milk", qty: "1 pint", forWhat: "Coffee", day: "All mornings" },
+      { id: "d7", name: "Burrata", qty: "1 ball, fresh", forWhat: "Grilled peach + burrata app", day: "Sat BBQ" },
+      { id: "d8", name: "Feta cheese, block (not crumbled)", qty: "~6 oz", forWhat: "Greek village salad in slabs", day: "Thu BBQ" },
+      { id: "d9", name: "Parmesan wedge", qty: "~6 oz", forWhat: "Friday pasta", day: "Fri dinner" },
+      { id: "d10", name: "Cheddar slices", qty: "8 oz", forWhat: "Breakfast cheese + nephew grazing", day: "Breakfasts" },
+      { id: "d11", name: "Cotija or feta crumble", qty: "4 oz", forWhat: "Elote corn topping", day: "Sat BBQ" },
+      { id: "d12", name: "Goat cheese", qty: "4 oz", forWhat: "Sat salad — skip if buying at market", day: "Sat BBQ" },
+      { id: "d13", name: "Sour cream", qty: "8 oz", forWhat: "Elote corn + breakfast scrambles", day: "Sat + breakfasts" },
+      { id: "d14", name: "Butter, salted", qty: "1 lb", forWhat: "Toast + Sat garlic-herb butter", day: "All + Sat BBQ" }
+    ]
+  },
+  {
+    category: "Produce",
+    key: "produce",
+    items: [
+      { id: "p1", name: "Zucchinis", qty: "2", forWhat: "Grilled veg side", day: "Thu BBQ" },
+      { id: "p2", name: "Shishito or padron peppers", qty: "1 lb", forWhat: "Grilled veg, blistered", day: "Thu BBQ" },
+      { id: "p3", name: "Red onions", qty: "2–3", forWhat: "Grilled veg + Greek salad + general", day: "Thu + Sat" },
+      { id: "p4", name: "Asparagus (optional)", qty: "1 lb", forWhat: "Grilled veg — skip if not great quality", day: "Thu BBQ" },
+      { id: "p5", name: "Corn on the cob", qty: "4 ears", forWhat: "Elote-style grilled corn", day: "Sat BBQ" },
+      { id: "p6", name: "English cucumbers", qty: "3", forWhat: "Tzatziki + Greek salad + raw board", day: "Thu + Sat lunch" },
+      { id: "p7", name: "Ripe tomatoes (or 1 pint cherry)", qty: "3 large / 1 pt", forWhat: "Greek village salad", day: "Thu BBQ" },
+      { id: "p8", name: "Avocados", qty: "3", forWhat: "Breakfast scrambles + Sat board + snacks", day: "All + Sat" },
+      { id: "p9", name: "Lemons", qty: "6", forWhat: "Marinades + tzatziki + grilled lemons + dressings", day: "Thu + Sat" },
+      { id: "p10", name: "Limes", qty: "2", forWhat: "Elote corn dressing", day: "Sat BBQ" },
+      { id: "p11", name: "Garlic", qty: "2 heads", forWhat: "Marinades + tzatziki + chimichurri + garlic bread", day: "Thu + Sat" },
+      { id: "p12", name: "Fresh dill", qty: "1 bunch", forWhat: "Tzatziki", day: "Thu BBQ" },
+      { id: "p13", name: "Fresh parsley (flat-leaf)", qty: "1 large bunch", forWhat: "Chimichurri + garnish", day: "Sat BBQ" },
+      { id: "p14", name: "Fresh rosemary", qty: "1 bunch", forWhat: "Lamb marinade", day: "Sat BBQ" },
+      { id: "p15", name: "Fresh thyme", qty: "1 small bunch", forWhat: "Lamb marinade (sub dried if needed)", day: "Sat BBQ" },
+      { id: "p16", name: "Fresh basil", qty: "1 bunch", forWhat: "Grilled peach + burrata + board", day: "Sat + Sat lunch" },
+      { id: "p17", name: "Cilantro", qty: "1 bunch", forWhat: "Elote corn topping", day: "Sat BBQ" },
+      { id: "p18", name: "Ripe peaches", qty: "4", forWhat: "Grilled peach app — buy at Sat market if possible", day: "Sat BBQ" },
+      { id: "p19", name: "Bananas", qty: "6", forWhat: "Pre-workout + breakfasts + Kian + car snacks", day: "All days" },
+      { id: "p20", name: "Apples", qty: "4", forWhat: "Snacks + breakfast + nephew", day: "All days" },
+      { id: "p21", name: "Strawberries", qty: "1 lb", forWhat: "Breakfast + board — buy at Sat market if possible", day: "Breakfasts + Sat" },
+      { id: "p22", name: "Baby carrots", qty: "1 bag", forWhat: "Snacks + Sat board crudité", day: "Sat lunch + snacks" },
+      { id: "p23", name: "Mixed greens / salad mix", qty: "1 bag", forWhat: "Sat BBQ salad — skip if buying at market", day: "Sat BBQ" }
+    ]
+  },
+  {
+    category: "Bakery / bread",
+    key: "bakery",
+    items: [
+      { id: "k1", name: "Large sourdough loaf", qty: "2 loaves", forWhat: "Breakfast toast + Sat garlic bread", day: "All + Sat BBQ" },
+      { id: "k2", name: "Pita bread", qty: "2 packs (12–16 pcs)", forWhat: "Thu Greek carb + Sat lamb carb", day: "Thu + Sat" },
+      { id: "k3", name: "Good crackers (water/sea salt)", qty: "1 box", forWhat: "Sat lunch board", day: "Sat lunch" }
+    ]
+  },
+  {
+    category: "Pantry / dry goods",
+    key: "pantry",
+    items: [
+      { id: "y1", name: "Dried pasta (bucatini or spaghetti)", qty: "1 lb", forWhat: "Friday aglio e olio", day: "Fri dinner" },
+      { id: "y2", name: "Cereal (Cheerios)", qty: "1 box", forWhat: "Nephew + Kian", day: "Breakfasts" },
+      { id: "y3", name: "Roasted unsalted almonds or pistachios", qty: "8 oz", forWhat: "Board topping + salad + snacks", day: "Sat + snacks" },
+      { id: "y4", name: "Pitted Kalamata olives", qty: "1 jar (6–8 oz)", forWhat: "Greek village salad", day: "Thu BBQ" },
+      { id: "y5", name: "Hummus", qty: "10 oz container", forWhat: "Sat board + snacks", day: "Sat + snacks" },
+      { id: "y6", name: "Jam", qty: "small jar", forWhat: "Breakfasts — skip if buying at market", day: "Breakfasts" }
+    ]
+  },
+  {
+    category: "Bring from home",
+    key: "fromhome",
+    items: [
+      { id: "h1", name: "Dijon mustard", qty: "small container (~2 tbsp)", forWhat: "Lamb marinade + vinaigrette", day: "Sat + Fri" },
+      { id: "h2", name: "Mayonnaise", qty: "small container (~1/4 cup)", forWhat: "Elote corn dressing", day: "Sat BBQ" },
+      { id: "h3", name: "Peanut butter", qty: "small jar or container", forWhat: "Breakfast toast", day: "All breakfasts" },
+      { id: "h4", name: "Honey", qty: "small squeeze bottle", forWhat: "Cheese pairing + breakfast bar", day: "Breakfasts + Sat board" },
+      { id: "h5", name: "Granola", qty: "1 large Ziploc", forWhat: "Breakfast bar", day: "All breakfasts" },
+      { id: "h6", name: "Basmati or jasmine rice", qty: "2–3 cups dry in Ziploc", forWhat: "Backup carb + Kian plain rice", day: "Thu / Sat" }
+    ]
+  },
+  {
+    category: "Condiments / oils",
+    key: "condiments",
+    items: [
+      { id: "c1", name: "Olive oil", qty: "small bottle", forWhat: "Marinades + dressings + finishing — check Airbnb first", day: "All days" },
+      { id: "c2", name: "Red wine vinegar", qty: "small bottle", forWhat: "Greek salad + chimichurri", day: "Thu + Sat" },
+      { id: "c3", name: "Balsamic glaze", qty: "small bottle", forWhat: "Grilled peach + burrata drizzle", day: "Sat BBQ" },
+      { id: "c4", name: "Hot sauce (Cholula etc.)", qty: "small bottle", forWhat: "Breakfast scrambles + general", day: "Breakfasts" }
+    ]
+  },
+  {
+    category: "Spices (pack from home in Ziplocs)",
+    key: "spices",
+    items: [
+      { id: "s1", name: "Kosher salt + black pepper (coarse)", qty: "Ziploc", forWhat: "Everything", day: "All days" },
+      { id: "s2", name: "Dried oregano (Greek preferred)", qty: "Ziploc", forWhat: "Greek marinade + village salad", day: "Thu BBQ" },
+      { id: "s3", name: "Dried thyme", qty: "Ziploc", forWhat: "Greek marinade + lamb backup", day: "Thu + Sat" },
+      { id: "s4", name: "Dried rosemary", qty: "Ziploc", forWhat: "Lamb marinade backup if no fresh", day: "Sat BBQ" },
+      { id: "s5", name: "Paprika (sweet)", qty: "Ziploc", forWhat: "Optional rub depth", day: "Thu / Sat" },
+      { id: "s6", name: "Red pepper flakes", qty: "Ziploc", forWhat: "Greek chicken + pasta + chimichurri", day: "All BBQs + Fri" },
+      { id: "s7", name: "Chili powder", qty: "Ziploc", forWhat: "Elote corn", day: "Sat BBQ" },
+      { id: "s8", name: "Ground cumin", qty: "Ziploc", forWhat: "Optional lamb depth", day: "Sat BBQ" },
+      { id: "s9", name: "Cardamom pods, cloves, cinnamon sticks", qty: "Ziploc", forWhat: "Parents' masala chai", day: "All mornings" },
+      { id: "s10", name: "Garlic + onion powder", qty: "Ziploc", forWhat: "Optional rub depth", day: "Thu / Sat" }
+    ]
+  },
+  {
+    category: "Beverages",
+    key: "beverages",
+    items: [
+      { id: "v1", name: "Coffee (ground, matching Airbnb machine)", qty: "1 bag", forWhat: "All mornings", day: "All days" },
+      { id: "v2", name: "Tea bags (English breakfast / Assam)", qty: "1 box", forWhat: "Parents' chai base + tea", day: "All days" },
+      { id: "v3", name: "Sparkling water", qty: "1 case (12-pack)", forWhat: "Drinking + dinners", day: "All days" },
+      { id: "v4", name: "Still bottled water", qty: "1 case", forWhat: "Car + hikes + general", day: "All days" },
+      { id: "v5", name: "Orange juice", qty: "1/2 gallon", forWhat: "Sunday breakfast", day: "Sun" },
+      { id: "v6", name: "Lemonade or juice", qty: "1 bottle", forWhat: "Nephew", day: "All days" }
+    ]
+  },
+  {
+    category: "Baby aisle (Kian)",
+    key: "baby",
+    items: [
+      { id: "n1", name: "Fruit pouches", qty: "8–10", forWhat: "Snacks + hikes + car", day: "All days" },
+      { id: "n2", name: "Puffs", qty: "2 containers", forWhat: "Snacks", day: "All days" },
+      { id: "n3", name: "Yogurt melts", qty: "1 container", forWhat: "Snacks", day: "All days" },
+      { id: "n4", name: "Teething wafers", qty: "1 box", forWhat: "Snacks", day: "All days" },
+      { id: "n5", name: "Toddler cereal / oat O's", qty: "1 box", forWhat: "Backup if Cheerios too big", day: "Breakfasts" }
+    ]
+  },
+  {
+    category: "Paper / household (check Airbnb first)",
+    key: "paper",
+    items: [
+      { id: "r1", name: "Paper towels", qty: "1 roll if low", forWhat: "General", day: "All days" },
+      { id: "r2", name: "Foil", qty: "1 roll if absent", forWhat: "Garlic bread + leftovers", day: "Sat + general" },
+      { id: "r3", name: "Trash bags", qty: "if needed", forWhat: "General + diapers", day: "All days" },
+      { id: "r4", name: "Gallon Ziplocs", qty: "1 box", forWhat: "Marinades + leftovers + car snacks", day: "All days" },
+      { id: "r5", name: "Charcoal + lighter cubes", qty: "as needed", forWhat: "ONLY if Airbnb has charcoal grill — text host", day: "BBQ" }
+    ]
+  }
+];
+
+// ============ STORAGE ============
+const STORAGE_KEY = 'healdsburg-shop-state-v1';
+const CUSTOM_KEY = 'healdsburg-shop-custom-v1';
+const TOGGLE_KEY = 'healdsburg-shop-hide-v1';
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) { return {}; }
+}
+function saveState(state) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+}
+function loadCustom() {
+  try {
+    const raw = localStorage.getItem(CUSTOM_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) { return {}; }
+}
+function saveCustom(custom) {
+  try { localStorage.setItem(CUSTOM_KEY, JSON.stringify(custom)); } catch (e) {}
+}
+function loadToggle() {
+  try {
+    return localStorage.getItem(TOGGLE_KEY) === 'true';
+  } catch (e) { return false; }
+}
+function saveToggle(val) {
+  try { localStorage.setItem(TOGGLE_KEY, String(val)); } catch (e) {}
+}
+
+let state = loadState();
+let customItems = loadCustom();
+let hideChecked = loadToggle();
+
+// ============ RENDER ============
+function getCustomForCategory(catKey) {
+  return customItems[catKey] || [];
+}
+
+function renderShopping() {
+  const container = document.getElementById('shop-categories');
+  container.innerHTML = '';
+
+  let totalItems = 0, checkedItems = 0;
+
+  SHOPPING_DATA.forEach(cat => {
+    const customCatItems = getCustomForCategory(cat.key);
+    const allItems = [...cat.items, ...customCatItems];
+
+    const visibleItems = hideChecked ? allItems.filter(it => !state[it.id]) : allItems;
+    const catChecked = allItems.filter(it => state[it.id]).length;
+
+    totalItems += allItems.length;
+    checkedItems += catChecked;
+
+    const catEl = document.createElement('div');
+    catEl.className = 'shop-category';
+    catEl.innerHTML = `
+      <div class="shop-category-header">
+        <span>${cat.category.replace(/\//g, '<em>/</em>')}</span>
+        <span class="cat-count">${catChecked} / ${allItems.length}</span>
+      </div>
+      <ul class="shop-list" data-cat="${cat.key}"></ul>
+      <div class="add-item-row">
+        <input class="add-item-input" type="text" placeholder="Add an item to ${cat.category}…" data-cat="${cat.key}" />
+        <button class="add-item-btn" data-cat="${cat.key}">Add</button>
+      </div>
+    `;
+    const list = catEl.querySelector('.shop-list');
+    visibleItems.forEach(it => {
+      const isChecked = !!state[it.id];
+      const isCustom = it.custom === true;
+      const li = document.createElement('li');
+      li.className = 'shop-item' + (isChecked ? ' checked' : '');
+      li.innerHTML = `
+        <input class="shop-checkbox" type="checkbox" data-id="${it.id}" ${isChecked ? 'checked' : ''} aria-label="${it.name}" />
+        <div class="item-content">
+          <div class="item-name">${it.name}</div>
+          <div class="item-meta">
+            ${it.qty ? '<span class="qty">' + it.qty + '</span>' : ''}
+            ${it.forWhat ? ' · ' + it.forWhat : ''}
+            ${it.day ? '<span class="day">' + it.day + '</span>' : ''}
+          </div>
+        </div>
+        ${isCustom ? `<button class="item-remove" data-remove-id="${it.id}" data-cat="${cat.key}" aria-label="Remove item">×</button>` : `<button class="item-remove" data-remove-id="${it.id}" data-cat="${cat.key}" aria-label="Remove item">×</button>`}
+      `;
+      list.appendChild(li);
+    });
+    container.appendChild(catEl);
+  });
+
+  // stat
+  document.getElementById('shop-stat').innerHTML = `<strong>${checkedItems}</strong> of <strong>${totalItems}</strong> items checked`;
+
+  // toggle button label
+  const toggleBtn = document.getElementById('shop-toggle');
+  toggleBtn.textContent = hideChecked ? 'Show all' : 'Hide checked';
+  toggleBtn.classList.toggle('active', hideChecked);
+
+  attachListeners();
+}
+
+function attachListeners() {
+  // checkboxes
+  document.querySelectorAll('.shop-checkbox').forEach(cb => {
+    cb.addEventListener('change', e => {
+      const id = e.target.dataset.id;
+      if (e.target.checked) {
+        state[id] = true;
+      } else {
+        delete state[id];
+      }
+      saveState(state);
+      renderShopping();
+    });
+  });
+
+  // add buttons
+  document.querySelectorAll('.add-item-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const catKey = btn.dataset.cat;
+      const input = document.querySelector(`.add-item-input[data-cat="${catKey}"]`);
+      addCustomItem(catKey, input.value.trim());
+      input.value = '';
+    });
+  });
+
+  // enter key in inputs
+  document.querySelectorAll('.add-item-input').forEach(input => {
+    input.addEventListener('keypress', e => {
+      if (e.key === 'Enter') {
+        const catKey = input.dataset.cat;
+        addCustomItem(catKey, input.value.trim());
+        input.value = '';
+      }
+    });
+  });
+
+  // remove buttons
+  document.querySelectorAll('.item-remove').forEach(btn => {
+    btn.addEventListener('click', e => {
+      const id = btn.dataset.removeId;
+      const catKey = btn.dataset.cat;
+      removeItem(catKey, id);
+    });
+  });
+}
+
+function addCustomItem(catKey, name) {
+  if (!name) return;
+  if (!customItems[catKey]) customItems[catKey] = [];
+  const id = 'custom-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+  customItems[catKey].push({
+    id: id,
+    name: name,
+    qty: '',
+    forWhat: 'added by you',
+    day: '',
+    custom: true
+  });
+  saveCustom(customItems);
+  renderShopping();
+}
+
+function removeItem(catKey, id) {
+  // If it's a default item, we hide it by adding to a hidden list
+  // For simplicity, we'll just toggle it out of view by removing from custom or marking default as hidden
+  if (customItems[catKey]) {
+    const idx = customItems[catKey].findIndex(x => x.id === id);
+    if (idx >= 0) {
+      customItems[catKey].splice(idx, 1);
+      saveCustom(customItems);
+      delete state[id];
+      saveState(state);
+      renderShopping();
+      return;
+    }
+  }
+  // for default items: mark them removed by storing in a separate "removed" set
+  removeDefault(id);
+}
+
+const REMOVED_KEY = 'healdsburg-shop-removed-v1';
+function loadRemoved() {
+  try {
+    return JSON.parse(localStorage.getItem(REMOVED_KEY) || '[]');
+  } catch (e) { return []; }
+}
+function saveRemoved(r) {
+  try { localStorage.setItem(REMOVED_KEY, JSON.stringify(r)); } catch (e) {}
+}
+let removedIds = loadRemoved();
+
+function removeDefault(id) {
+  if (!removedIds.includes(id)) removedIds.push(id);
+  saveRemoved(removedIds);
+  delete state[id];
+  saveState(state);
+  renderShopping();
+}
+
+// Filter default items by removedIds at render time
+const originalRender = renderShopping;
+function renderShoppingFiltered() {
+  // override
+  const container = document.getElementById('shop-categories');
+  container.innerHTML = '';
+
+  let totalItems = 0, checkedItems = 0;
+
+  SHOPPING_DATA.forEach(cat => {
+    const customCatItems = getCustomForCategory(cat.key);
+    const allItems = [...cat.items.filter(it => !removedIds.includes(it.id)), ...customCatItems];
+
+    const visibleItems = hideChecked ? allItems.filter(it => !state[it.id]) : allItems;
+    const catChecked = allItems.filter(it => state[it.id]).length;
+
+    totalItems += allItems.length;
+    checkedItems += catChecked;
+
+    const catEl = document.createElement('div');
+    catEl.className = 'shop-category';
+    catEl.innerHTML = `
+      <div class="shop-category-header">
+        <span>${cat.category.replace(/\//g, '<em>/</em>')}</span>
+        <span class="cat-count">${catChecked} / ${allItems.length}</span>
+      </div>
+      <ul class="shop-list" data-cat="${cat.key}"></ul>
+      <div class="add-item-row">
+        <input class="add-item-input" type="text" placeholder="Add an item to ${cat.category}…" data-cat="${cat.key}" />
+        <button class="add-item-btn" data-cat="${cat.key}">Add</button>
+      </div>
+    `;
+    const list = catEl.querySelector('.shop-list');
+    visibleItems.forEach(it => {
+      const isChecked = !!state[it.id];
+      const li = document.createElement('li');
+      li.className = 'shop-item' + (isChecked ? ' checked' : '');
+      li.innerHTML = `
+        <input class="shop-checkbox" type="checkbox" data-id="${it.id}" ${isChecked ? 'checked' : ''} aria-label="${it.name}" />
+        <div class="item-content">
+          <div class="item-name">${it.name}</div>
+          <div class="item-meta">
+            ${it.qty ? '<span class="qty">' + it.qty + '</span>' : ''}
+            ${it.forWhat ? (it.qty ? ' · ' : '') + it.forWhat : ''}
+            ${it.day ? '<span class="day">' + it.day + '</span>' : ''}
+          </div>
+        </div>
+        <button class="item-remove" data-remove-id="${it.id}" data-cat="${cat.key}" aria-label="Remove item">×</button>
+      `;
+      list.appendChild(li);
+    });
+    container.appendChild(catEl);
+  });
+
+  document.getElementById('shop-stat').innerHTML = `<strong>${checkedItems}</strong> of <strong>${totalItems}</strong> items checked`;
+  const toggleBtn = document.getElementById('shop-toggle');
+  toggleBtn.textContent = hideChecked ? 'Show all' : 'Hide checked';
+  toggleBtn.classList.toggle('active', hideChecked);
+
+  attachListeners();
+}
+
+// Replace global render
+renderShopping = renderShoppingFiltered;
+
+// ============ CONTROLS ============
+document.getElementById('shop-toggle').addEventListener('click', () => {
+  hideChecked = !hideChecked;
+  saveToggle(hideChecked);
+  renderShopping();
+});
+
+document.getElementById('shop-reset').addEventListener('click', () => {
+  if (confirm('Reset the entire shopping list? This will uncheck everything, remove your custom items, and restore items you removed.')) {
+    state = {};
+    customItems = {};
+    removedIds = [];
+    saveState(state);
+    saveCustom(customItems);
+    saveRemoved(removedIds);
+    renderShopping();
+  }
+});
+
+// ============ DAY TABS ============
+document.querySelectorAll('.day-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('day-' + tab.dataset.day).classList.add('active');
+  });
+});
+
+// ============ SECTION NAV ACTIVE STATE ============
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('nav.section-nav a');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.dataset.target === id);
+      });
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(s => observer.observe(s));
+
+// initial render
+renderShopping();
+</script>
+
+</body>
+</html>
